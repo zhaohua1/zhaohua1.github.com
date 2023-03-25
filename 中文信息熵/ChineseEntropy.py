@@ -91,6 +91,17 @@ entropy=getEntropy(allText,3,stopTxt)
 print(entropy)
 print('总耗时{:.1f}s'.format(time.time()-stratTime))
 
+#制作词云
+#import wordcloud
+# from imageio.v3 import imread
+# ls=[w for w in (jieba.lcut(allText)) if w not in stopTxt]
+# txt=" ".join(ls)
+# mask=imread("E:\\python\\NLP\\img.png")
+# w=wordcloud.WordCloud(font_path="msyh.ttc",width=1000,height=700,
+#                       background_color="white",max_words=150,mask=mask)
+# w.generate(txt)
+# w.to_file('E:\\python\\NLP\\result.png')
+
 
 # entropy=[]
 # for i in range(1,6):
